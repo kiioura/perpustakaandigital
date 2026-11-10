@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bloom Library | Digital Library</title>
+
+    <!-- Aesthetic Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: #fffaf7;
+            color: #68575d;
+        }
+
+        /* HEADER */
+
+        header {
+            background: linear-gradient(135deg, #f5dce4, #e8f0e4);
+            color: #a86f83;
+            text-align: center;
+            padding: 65px 20px 55px;
+            border-bottom: 2px solid #f0dce0;
+        }
+
+        header .flower {
+            font-size: 27px;
+            letter-spacing: 12px;
+            margin-bottom: 15px;
+        }
+
+        header h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 55px;
+            font-weight: 600;
+            letter-spacing: 3px;
+        }
+
+        header p {
+            font-size: 12px;
+            letter-spacing: 3px;
+            margin-top: 12px;
+            color: #718b70;
+        }
+
+        /* CONTAINER */
+
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 35px;
+            background: #ffffff;
+            border-radius: 22px;
+            border: 1px solid #f0e1e3;
+            box-shadow: 0 8px 25px rgba(185, 145, 155, 0.09);
+        }
+
+        /* SECTION TITLE */
+
+        h2 {
+            font-family: 'Cormorant Garamond', serif;
+            color: #b7798c;
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 18px;
+            padding-bottom: 9px;
+            border-bottom: 1px solid #f1dfe3;
+        }
+
+        /* IDENTITAS */
+
+        .identitas {
+            background: linear-gradient(120deg, #fff0f3, #eef4eb);
+            padding: 22px 25px;
+            border-radius: 15px;
+            line-height: 2.2;
+            font-size: 14px;
+            border: 1px solid #f0e2e4;
+        }
+
+        .identitas b {
+            color: #9b7180;
+        }
+
+        /* DAFTAR BUKU */
+
+        .buku {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            text-decoration: none;
+            color: #718b70;
+            background: #f4f7f1;
+            padding: 17px 20px;
+            margin: 13px 0;
+            border-radius: 13px;
+            border: 1px solid #e6eddf;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .buku:hover {
+            background: #f9e9ed;
+            color: #b7798c;
+            border-color: #edcbd5;
+            transform: translateX(5px);
+            box-shadow: 0 5px 13px rgba(185, 145, 155, 0.12);
+        }
+
+        .buku::after {
+            content: "Read ♡";
+            font-size: 11px;
+            color: #b7798c;
+            white-space: nowrap;
+        }
+
+        /* UGC */
+
+        .ugc {
+            background: linear-gradient(120deg, #f9e8ed, #edf3e9);
+            padding: 22px;
+            border-radius: 16px;
+            border: 1px solid #eddae0;
+            margin-top: 15px;
+        }
+
+        .ugc .buku {
+            background: #ffffff;
+            border-color: #efdce1;
+            margin-bottom: 0;
+        }
+
+        .ugc .buku:hover {
+            background: #f5f8f1;
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            background: #f4e5e9;
+            color: #9a7882;
+            padding: 27px 15px;
+            font-size: 12px;
+            line-height: 2;
+        }
+
+        footer .flower {
+            font-size: 19px;
+            letter-spacing: 8px;
+            margin-bottom: 5px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 600px) {
+
+            header {
+                padding: 45px 15px;
+            }
+
+            header h1 {
+                font-size: 40px;
+            }
+
+            header p {
+                font-size: 10px;
+                letter-spacing: 2px;
+            }
+
+            .container {
+                margin: 20px 12px;
+                padding: 22px 17px;
+            }
+
+            h2 {
+                font-size: 26px;
+            }
+
+            .buku {
+                padding: 15px 12px;
+                font-size: 12px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="flower">✿ ❀ ✿</div>
+
+    <h1>Bloom Library</h1>
+
+    <p>A LITTLE PLACE FOR READING & KNOWLEDGE</p>
+</header>
+
+<div class="container">
+
+    <h2>♡ Identitas Mahasiswa</h2>
+
+    <div class="identitas">
+        <b>Nama:</b> Chiquita Dzakia Surya Alfa Rossa<br>
+        <b>NIM:</b> 13040124130045
+    </div>
+
+    <h2>✿ Daftar Ebook</h2>
+
+    <a class="buku" href="ebook/buku-01.pdf" target="_blank">01. Judul Buku 1</a>
+
+    <a class="buku" href="ebook/buku-02.pdf" target="_blank">02. Judul Buku 2</a>
+
+    <a class="buku" href="ebook/buku-03.pdf" target="_blank">03. Judul Buku 3</a>
+
+    <a class="buku" href="ebook/buku-04.pdf" target="_blank">04. Judul Buku 4</a>
+
+    <a class="buku" href="ebook/buku-05.pdf" target="_blank">05. Judul Buku 5</a>
+
+    <a class="buku" href="ebook/buku-06.pdf" target="_blank">06. Judul Buku 6</a>
+
+    <a class="buku" href="ebook/buku-07.pdf" target="_blank">07. Judul Buku 7</a>
+
+    <a class="buku" href="ebook/buku-08.pdf" target="_blank">08. Judul Buku 8</a>
+
+    <a class="buku" href="ebook/buku-09.pdf" target="_blank">09. Judul Buku 9</a>
+
+    <a class="buku" href="ebook/buku-10.pdf" target="_blank">10. Judul Buku 10</a>
+
+    <h2>🌷 Materi UGC</h2>
+
+    <div class="ugc">
+
+        <a class="buku" href="ebook/ringkasan-ugc.pdf" target="_blank">
+            11. Ringkasan Pemaparan UGC dan Wawasan Baru
+        </a>
+
+    </div>
+
+</div>
+
+<footer>
+    <div class="flower">✿ ❀ ✿</div>
+
+    <p>Bloom Library - 2026</p>
+
+    <p>Made with love for knowledge and reading ♡</p>
+</footer>
+
+</body>
+</html>
